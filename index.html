@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Interactive rating component – Frontend Mentor</title>
+
+    <!-- ===== CSS (external file) ===== -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== MAIN CARD ===== -->
+    <main class="card" role="main" aria-label="Rating component">
+      <!-- ---------- RATING STATE ---------- -->
+      <section class="rating-state" id="ratingState" aria-live="polite">
+        <div class="star-icon">
+          <!-- star icon (inline SVG) -->
+          <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.5 0L6.4 5.8L0 6.7L4.8 11.4L3.4 18L8.5 14.7L13.6 18L12.2 11.4L17 6.7L10.6 5.8L8.5 0Z"
+              fill="#FF7D1A"
+            />
+          </svg>
+        </div>
+
+        <h1>How did we do?</h1>
+
+        <p class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <!-- rating buttons (1–5) -->
+        <div class="rating-buttons" role="radiogroup" aria-label="Rating">
+          <button
+            class="rating-btn"
+            role="radio"
+            aria-checked="false"
+            data-value="1"
+          >
+            1
+          </button>
+          <button
+            class="rating-btn"
+            role="radio"
+            aria-checked="false"
+            data-value="2"
+          >
+            2
+          </button>
+          <button
+            class="rating-btn"
+            role="radio"
+            aria-checked="false"
+            data-value="3"
+          >
+            3
+          </button>
+          <button
+            class="rating-btn"
+            role="radio"
+            aria-checked="false"
+            data-value="4"
+          >
+            4
+          </button>
+          <button
+            class="rating-btn"
+            role="radio"
+            aria-checked="false"
+            data-value="5"
+          >
+            5
+          </button>
+        </div>
+
+        <button class="submit-btn" id="submitBtn" disabled>Submit</button>
+      </section>
+
+      <!-- ---------- THANK YOU STATE ---------- -->
+      <section
+        class="thank-you-state hidden"
+        id="thankYouState"
+        aria-live="polite"
+      >
+        <div class="illustration">
+          <!-- thank-you illustration (inline SVG) -->
+          <svg
+            width="144"
+            height="96"
+            viewBox="0 0 144 96"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="62" y="22" width="20" height="20" rx="10" fill="#262E38" />
+            <rect x="82" y="28" width="12" height="12" rx="6" fill="#262E38" />
+            <rect x="50" y="28" width="12" height="12" rx="6" fill="#262E38" />
+            <path
+              d="M72 56C59.85 56 50 65.85 50 78H94C94 65.85 84.15 56 72 56Z"
+              fill="#262E38"
+            />
+            <circle cx="72" cy="78" r="18" fill="#FF7D1A" />
+            <path
+              d="M72 66L76.5 73.5L84 76L76.5 78.5L72 86L67.5 78.5L60 76L67.5 73.5L72 66Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+
+        <span class="selection-badge" id="selectionBadge"
+          >You selected 4 out of 5</span
+        >
+
+        <h1>Thank you!</h1>
+
+        <p class="thank-message">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Kelvyn94">Kelvyn94</a>.
+    </footer>
+
+    <!-- ===== JAVASCRIPT (external file) ===== -->
+    <script src="script.js"></script>
+  </body>
+</html>
