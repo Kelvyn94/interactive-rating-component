@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/yourusername/interactive-rating-component](https://github.com/yourusername/interactive-rating-component)
+- Solution URL: ((https://github.com/Kelvyn94/interactive-rating-component))
 - Live Site URL: [https://yourusername.github.io/interactive-rating-component](https://yourusername.github.io/interactive-rating-component)
 
 ## My process
